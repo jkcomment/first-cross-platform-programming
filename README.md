@@ -1,6 +1,7 @@
 # first-cross-platform-programming
 
-## rust-cross-iosビルド
+## rust-cross-ios
+### ビルド関連必要なものをインストール
 - Xcodeインストール
 - Xcodeビルドツールインストール
 ```
@@ -13,4 +14,9 @@ $ rustup target add aarch64-apple-ios aarch64-apple-ios-sim x86_64-apple-ios
 - cargo-lipoインストール
 ```
 $ cargo install cargo-lipo
+```
+### ビルド
+- ライブラリファイル生成
+```
+rust-cross-ios $ cargo lipo --release
 ```
