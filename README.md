@@ -20,3 +20,14 @@ $ cargo install cargo-lipo
 ```
 rust-cross-ios $ cargo lipo --release
 ```
+
+## rust-cross-web
+### ビルドツールインストール
+- wasm-packインストール
+```
+$ curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+```
+- npmインストール
+```
+$ npm install npm@latest -g
+```
