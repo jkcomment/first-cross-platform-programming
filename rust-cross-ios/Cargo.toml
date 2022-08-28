@@ -5,4 +5,9 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+# 静的/動的ライブラリを作る
+crate-type = ["staticlib", "cdylib"]
+
 [dependencies]
+rust-cross = { path = "../rust-cross" }
